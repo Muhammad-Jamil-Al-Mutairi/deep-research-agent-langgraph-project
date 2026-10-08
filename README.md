@@ -132,16 +132,7 @@ told which field to fix, and the run stops after three identical attempts), and 
 decimal below 1 ("0.8 m/s" -> 0). For that last case the numeric requirements are cross-checked against the
 request text, zeroed values are repaired and recorded as assumptions, and contradictions become open questions.
 
-## Rubric mapping (SDAIA `EVALUATION.md`)
 
-| Category | How HERMES meets it | Where |
-|---|---|---|
-| **Agent Architecture (65)** | 7 `create_agent` roles; planner decomposition; 4-way parallel research; conditional routing; verify -> replan retry loop; critic quality loop; graceful handling of bad tool results and agent failures | `src/hermes/agents/team.py`, `src/hermes/graph/` |
-| **Observability & Reliability (25)** | Given tracing/cost kept and extended to every node; given `LoopDetector` wired into tool calls (middleware) and design proposals (repetition); text + numeric stagnation; visible reaction (strategy change / graceful stop); step budgets per stage (`ToolCallLimitMiddleware`, `ModelCallLimitMiddleware`) and per mission; checkpointer memory with pause/resume | `src/hermes/observability/`, `src/hermes/tools/verification/loop_detector.py`, `src/hermes/graph/routing.py` |
-| **Engineering Excellence (10)** | `uv`; notebook sections setup -> observability -> tools -> agents -> pipeline -> run -> checks; tested package; no secrets | `pyproject.toml`, `research_agent.ipynb`, `tests/` |
-| **Bonus: full RAG (+15)** | Datasheet ingestion -> section-aware chunking -> local ONNX embeddings -> Chroma -> metadata-filtered retrieval -> cited evidence (source, section, page, URL, component ids) | `src/hermes/tools/research/rag.py`, `src/hermes/knowledge/datasheets/` |
-
-The notebook's final section has a criterion-by-criterion self-audit with file and test references.
 
 ## Project structure
 
