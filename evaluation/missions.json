@@ -1,0 +1,20 @@
+[
+  {
+    "id": "delivery-robot",
+    "purpose": "Main demonstration: realistic requirements that the economy-first strategy is not expected to meet on the first attempt.",
+    "request": "Design a small autonomous delivery robot with a 2 kg payload, at least 2 hours runtime, maximum speed of 1.5 m/s, total mass below 8 kg, and budget below 1500 SAR. Use commercially available components.",
+    "expect": {"final_status": ["VERIFIED"]}
+  },
+  {
+    "id": "indoor-cart",
+    "purpose": "Different requirements: light indoor payload, longer runtime, low speed, tighter budget.",
+    "request": "Design an indoor robot cart that carries 1 kg for at least 4 hours at up to 0.8 m/s on flat office floors. It must weigh under 5 kg including the load and cost less than 1200 SAR. It needs obstacle detection.",
+    "expect": {"final_status": ["VERIFIED"]}
+  },
+  {
+    "id": "infeasible",
+    "purpose": "Reliability: requirements no database part combination can meet. HERMES must stop gracefully with a best candidate and a human-review flag.",
+    "request": "Design a small autonomous delivery robot with a 2 kg payload, at least 12 hours runtime, maximum speed of 2.5 m/s, total mass below 3 kg, and budget below 600 SAR.",
+    "expect": {"final_status": ["BUDGET_EXHAUSTED", "STAGNATED"]}
+  }
+]

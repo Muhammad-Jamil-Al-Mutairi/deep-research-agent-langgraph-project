@@ -1,0 +1,54 @@
+{
+ "delivery-robot": {
+  "id": "delivery-robot",
+  "final_status": "VERIFIED",
+  "expected": [
+   "VERIFIED"
+  ],
+  "met_expectation": true,
+  "design_iterations": 2,
+  "verification_trail": "FAIL -> PASS",
+  "loop_events": 0,
+  "graph_steps": 18,
+  "agent_runs": 12,
+  "tokens": 214712,
+  "cost_usd": 0.014296,
+  "model": "deepseek/deepseek-v4-flash",
+  "run_on": "2026-10-08"
+ },
+ "infeasible": {
+  "id": "infeasible",
+  "final_status": "STAGNATED",
+  "expected": [
+   "BUDGET_EXHAUSTED",
+   "STAGNATED"
+  ],
+  "met_expectation": true,
+  "design_iterations": 5,
+  "verification_trail": "FAIL -> FAIL -> FAIL -> FAIL -> FAIL",
+  "loop_events": 4,
+  "graph_steps": 34,
+  "agent_runs": 19,
+  "tokens": 282186,
+  "cost_usd": 0.020065,
+  "model": "deepseek/deepseek-v4-flash",
+  "run_on": "2026-10-08"
+ },
+ "indoor-cart": {
+  "id": "indoor-cart",
+  "final_status": "VERIFIED",
+  "expected": [
+   "VERIFIED"
+  ],
+  "met_expectation": true,
+  "design_iterations": 2,
+  "verification_trail": "FAIL -> PASS",
+  "loop_events": 0,
+  "graph_steps": 19,
+  "agent_runs": 13,
+  "tokens": 210458,
+  "cost_usd": 0.038933,
+  "model": "deepseek/deepseek-v4-flash",
+  "run_on": "2026-10-08"
+ }
+}
