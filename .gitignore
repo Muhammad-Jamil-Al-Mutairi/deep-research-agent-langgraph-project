@@ -1,8 +1,0 @@
-.env
-.venv/
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-# HERMES build artefacts (rebuilt automatically from src/hermes/knowledge)
-.hermes/
-.pytest_cache/
