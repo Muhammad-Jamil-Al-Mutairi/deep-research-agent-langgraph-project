@@ -188,11 +188,5 @@ evaluation/      missions.json, run_missions.py, results/
   and `PROVIDER_ERROR` (the LLM provider refused requests, e.g. no credits). Only `VERIFIED` means every specified
   computational constraint passed, and even then physical validation is required.
 
-## How to submit (SDAIA)
-
-1. **Fork** the starter repository, push this project to your fork, and set `REPO_URL` in the notebook.
-2. Commit `research_agent.ipynb` **with outputs** from a live run, plus the package, tests and README.
-   Never commit `.env` (it is in `.gitignore`).
-3. Add the academy tag line below with your name, then commit and push.
 
 Submitted by: Muhammad Jamil Almutairi — academy: @SDAIAAcademy
